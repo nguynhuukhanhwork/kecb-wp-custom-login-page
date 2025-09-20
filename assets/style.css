@@ -1,0 +1,94 @@
+/* Đổi nền toàn trang */
+body.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Form đăng nhập nổi lên */
+#login {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#loginform {
+    border-radius: 10px;
+}
+/* Căn logo */
+.login h1 a {
+    background-size: contain;
+    width: 200px;
+    height: 60px;
+}
+
+/* Căn trái nhãn đăng nhập & mật khẩu */
+#login form label {
+    font-weight: 600;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.forgetmenot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Ô nhập liệu */
+input[type="text"], input[type="password"] {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+input[type="text"]::placeholder, 
+input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Viền sáng khi nhập */
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    outline: none;
+    border-color: #ff6f61;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Nút đăng nhập */
+.wp-core-ui .button-primary {
+    background: #970f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+#wp-submit {
+    margin-top: 12px;
+}
+
+.wp-core-ui .button-primary:hover {
+    background: #ff3b30;
+}
+
+/* Link dưới form (Quên mật khẩu, quay lại) */
+#nav a, #backtoblog a {
+    color: #fff !important;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#nav a:hover, #backtoblog a:hover {
+    text-decoration: underline;
+}
